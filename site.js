@@ -1,9 +1,9 @@
-// language: remembered choice, else the device's; then the toggle
+// language: English by default, or the visitor's remembered choice; then the toggle
 (() => {
   const html = document.documentElement;
   let l = null;
   try { l = localStorage.getItem('aphelion.langue'); } catch (e) {}
-  if (l !== 'fr' && l !== 'en') l = (navigator.languages || [navigator.language || 'fr']).some(x => /^fr/i.test(x)) ? 'fr' : 'en';
+  if (l !== 'fr' && l !== 'en') l = 'en';
   const poser = v => {
     html.dataset.l = v; html.lang = v;
     document.querySelectorAll('.langue button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.l === v)));
