@@ -71,9 +71,9 @@ h2 em{font-style:italic;color:var(--chaud)}
 .mode li::before{content:'';position:absolute;left:0;top:.72em;width:9px;height:1px;background:var(--or)}
 .num{font-family:var(--mono);font-size:11px;letter-spacing:.3em;color:var(--pale)}
 
-.tel{position:relative;justify-self:center;width:min(330px,78vw);aspect-ratio:660/1434;border-radius:46px;padding:9px;
+.tel{position:relative;justify-self:center;width:min(330px,78vw);border-radius:46px;padding:9px;
   background:linear-gradient(145deg,#2a2a2e,#0c0c0e 40%,#1c1c20);box-shadow:0 0 0 1px rgba(255,255,255,.07),0 40px 90px -20px rgba(0,0,0,.9),0 0 120px -30px var(--lueur,rgba(255,170,90,.25))}
-.tel img{width:100%;height:100%;object-fit:cover;border-radius:38px}
+.tel img{width:100%;height:auto;aspect-ratio:660/1434;border-radius:38px}
 .duo{display:flex;justify-content:center;gap:clamp(14px,2vw,24px)}
 .duo .tel{width:min(270px,40vw)}
 .duo .tel:last-child{margin-top:60px}
