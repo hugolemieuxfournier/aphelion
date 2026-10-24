@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr" data-l="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Aphelion — un instrument de calme</title>
+<meta name="titre-fr" content="Aphelion — un instrument de calme">
+<meta name="titre-en" content="Aphelion — an instrument of calm">
+<meta name="description" content="Aphelion, by Astrolab: breathe, sleep, focus and listen. Ten worlds, every sound synthesized live, nothing recorded, no data collected.">
+<meta name="theme-color" content="#040405">
+<meta property="og:title" content="Aphelion">
+<meta property="og:description" content="Un instrument de calme · An instrument of calm">
+<meta property="og:image" content="img/icon-512.png">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/instrument-serif-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="barre">
+  <a class="marque" href="./"><img src="img/favicon.png" alt="">Astrolab</a>
+  <div class="langue" role="group" aria-label="Langue · Language"><button data-l="fr" aria-pressed="true">FR</button><button data-l="en" aria-pressed="false">EN</button></div>
+</header>
+
+<div class="ouverture">
+  <div class="repli"></div>
+  <canvas id="trou" aria-hidden="true"></canvas>
+  <div class="titre">
+    <h1>Aphelion</h1>
+    <div class="par">by Astrolab</div>
+    <p class="devise"><span class="fr">Un instrument de calme.<br>Respirer, dormir, se concentrer, écouter.</span><span class="en">An instrument of calm.<br>Breathe, sleep, focus, listen.</span></p>
+    <a class="bientot" href="#modes"><i></i><span class="fr">Bientôt sur l'App Store</span><span class="en">Coming soon to the App Store</span></a>
+  </div>
+  <div class="descendre"></div>
+</div>
+
+<section id="modes">
+  <div class="centre">
+    <div class="intro-modes vient">
+      <div class="etiquette"><span class="fr">Cinq modes</span><span class="en">Five modes</span></div>
+      <h2><span class="fr">Tout se règle au doigt,<br><em>dans le noir, sans viser.</em></span><span class="en">Everything is played by touch,<br><em>in the dark, without looking.</em></span></h2>
+      <p class="chapeau"><span class="fr">Pas de menus à parcourir. Chaque mode est un instrument : on tourne, on glisse, on touche, et le son comme l'image répondent tout de suite.</span><span class="en">No menus to dig through. Each mode is an instrument: turn, slide, tap, and both sound and image answer at once.</span></p>
+    </div>
+
+    <div class="modes">
+      <article class="mode vient">
+        <div class="tel" style="--lueur:rgba(80,200,180,.3)"><img src="img/resp-espace.webp" alt="" loading="lazy"></div>
+        <div class="texte">
+          <div class="num">01</div>
+          <h3><span class="fr"><em>Respirer</em> en carré</span><span class="en"><em>Breathe</em> in a square</span></h3>
+          <p><span class="fr">Une comète fait le tour du carré, un côté par phase : inspire, retiens, expire, suspends. Le décor et la musique respirent avec toi.</span><span class="en">A comet travels round the square, one side per phase: inhale, hold, exhale, rest. The scenery and the music breathe with you.</span></p>
+          <ul>
+            <li><span class="fr">Box, Profond, Cohérence, 4·7·8, Éveil, ou ton propre rythme</span><span class="en">Box, Deep, Coherence, 4·7·8, Wake, or your own rhythm</span></li>
+            <li><span class="fr">Séances de 2 à 20 minutes, ou sans fin</span><span class="en">Sessions from 2 to 20 minutes, or endless</span></li>
+            <li><span class="fr">Carillons et vibrations à chaque phase</span><span class="en">Chimes and haptics at each phase</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="mode vient">
+        <div class="tel" style="--lueur:rgba(255,130,70,.3)"><img src="img/sommeil-trou.webp" alt="" loading="lazy"></div>
+        <div class="texte">
+          <div class="num">02</div>
+          <h3><span class="fr"><em>Dormir</em> dans le bruit qu'on choisit</span><span class="en"><em>Sleep</em> in the noise you choose</span></h3>
+          <p><span class="fr">Une molette glisse du bruit noir au violet, en passant par le brun, le rose et le blanc. Le bruit est généré en continu : il ne boucle jamais.</span><span class="en">A dial glides from black noise to violet, through brown, pink and white. The noise is generated continuously: it never loops.</span></p>
+          <ul>
+            <li><span class="fr">Le bruit se mêle à la musique du thème, d'un glisser</span><span class="en">Blend the noise with the theme's music in one slide</span></li>
+            <li><span class="fr">Coupes, largeur stéréo, son 360, minuterie qui s'éteint en fondu</span><span class="en">Filters, stereo width, 360 sound, a timer that fades out</span></li>
+            <li><span class="fr">Mode OLED : l'écran presque noir</span><span class="en">OLED mode: an almost black screen</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="mode vient">
+        <div class="tel" style="--lueur:rgba(255,190,110,.28)"><img src="img/focus-desert.webp" alt="" loading="lazy"></div>
+        <div class="texte">
+          <div class="num">03</div>
+          <h3><span class="fr"><em>Se concentrer</em> sur une pulsation</span><span class="en"><em>Focus</em> on a steady pulse</span></h3>
+          <p><span class="fr">Une musique rythmée, composée en direct, qui évolue lentement et ne surprend jamais. Une molette d'énergie va d'Ancre à Transe.</span><span class="en">Rhythmic music, composed live, that evolves slowly and never surprises. An energy dial runs from Anchor to Trance.</span></p>
+          <ul>
+            <li><span class="fr">Une pulsation calée sur le tempo, qui traverse la musique</span><span class="en">A pulse locked to the tempo, running through the music</span></li>
+            <li><span class="fr">Séances de 25, 50 ou 90 minutes, avec leurs pauses</span><span class="en">25, 50 or 90 minute sessions, with their breaks</span></li>
+            <li><span class="fr">Un bruit de masquage pour couvrir l'open space</span><span class="en">Masking noise to cover the open office</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="mode vient">
+        <div class="duo">
+          <div class="tel" style="--lueur:rgba(90,220,200,.32)"><img src="img/ondes-espace.webp" alt="" loading="lazy"></div>
+          <div class="tel" style="--lueur:rgba(255,240,210,.3)"><img src="img/ondes-infini.webp" alt="" loading="lazy"></div>
+        </div>
+        <div class="texte">
+          <div class="num">04</div>
+          <h3><span class="fr"><em>Ondes</em> : voir le battement</span><span class="en"><em>Waves</em>: see the beat</span></h3>
+          <p><span class="fr">Un son par oreille, presque pareils. Le battement entre les deux n'est pas dans le son : il naît dans ta tête. Aphelion le montre, en vrai, comme une figure qui respire.</span><span class="en">One tone per ear, almost the same. The beat between them is not in the sound: it is born in your head. Aphelion shows it, for real, as a breathing figure.</span></p>
+          <ul>
+            <li><span class="fr">Des voyages qui glissent lentement d'une onde à l'autre</span><span class="en">Journeys that drift slowly from one wave to the next</span></li>
+            <li><span class="fr">Une figure tracée par les deux oreilles, en direct</span><span class="en">A figure drawn by both ears, live</span></li>
+            <li><span class="fr">Binaural au casque, pulsation sans casque</span><span class="en">Binaural with headphones, a pulse without</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="mode vient">
+        <div class="tel" style="--lueur:rgba(200,200,255,.25)"><img src="img/e360-infini.webp" alt="" loading="lazy"></div>
+        <div class="texte">
+          <div class="num">05</div>
+          <h3><span class="fr"><em>360</em> : le son tout autour</span><span class="en"><em>360</em>: sound all around</span></h3>
+          <p><span class="fr">Le son se place autour de ta tête, comme dans un planétarium. Avec des AirPods, la scène reste en place quand tu tournes la tête.</span><span class="en">Sound is placed around your head, like a planetarium. With AirPods, the scene stays put as you turn your head.</span></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="univers">
+  <div class="centre vient" style="text-align:center">
+    <div class="etiquette"><span class="fr">Dix univers</span><span class="en">Ten worlds</span></div>
+    <h2><span class="fr">Cinq de nuit, cinq de jour.<br><em>Chacun avec sa musique.</em></span><span class="en">Five for the night, five for the day.<br><em>Each with its own music.</em></span></h2>
+    <p class="chapeau" style="margin-inline:auto"><span class="fr">Un décor, une police, des particules et un son à lui. Aphelion suit ton iPhone et passe seule de la nuit au jour, en douceur.</span><span class="en">Each has its own scenery, typeface, particles and sound. Aphelion follows your iPhone and drifts from night to day on its own.</span></p>
+  </div>
+  <div class="bande vient">
+    <div class="carte"><div class="tel"><img src="img/resp-espace.webp" alt="" loading="lazy"></div><b>Espace</b><span class="fr">nébuleuse, cloches</span><span class="en">nebula, bells</span></div>
+    <div class="carte"><div class="tel"><img src="img/resp-seance-infini.webp" alt="" loading="lazy"></div><b>Infini</b><span class="fr">un tunnel de lumière</span><span class="en">a tunnel of light</span></div>
+    <div class="carte"><div class="tel"><img src="img/sommeil-trou.webp" alt="" loading="lazy"></div><b class="fr">Trou noir</b><b class="en">Black hole</b><span class="fr">disque d'accrétion, gong</span><span class="en">accretion disk, gong</span></div>
+    <div class="carte"><div class="tel"><img src="img/focus-desert.webp" alt="" loading="lazy"></div><b class="fr">Désert</b><b class="en">Desert</b><span class="fr">dunes, oud, vent</span><span class="en">dunes, oud, wind</span></div>
+    <div class="carte"><div class="tel"><img src="img/resp-zen.webp" alt="" loading="lazy"></div><b>Zen</b><span class="fr">sable ratissé, bols</span><span class="en">raked sand, bowls</span></div>
+    <div class="carte"><div class="tel"><img src="img/sommeil-nuages.webp" alt="" loading="lazy"></div><b class="fr">Nuages</b><b class="en">Clouds</b><span class="fr">au-dessus de la mer de nuages</span><span class="en">above a sea of clouds</span></div>
+    <div class="carte"><div class="tel"><img src="img/resp-lagon.webp" alt="" loading="lazy"></div><b class="fr">Lagon</b><b class="en">Lagoon</b><span class="fr">reflets sous l'eau</span><span class="en">caustics under water</span></div>
+    <div class="carte"><div class="tel"><img src="img/focus-prisme.webp" alt="" loading="lazy"></div><b class="fr">Prisme</b><b class="en">Prism</b><span class="fr">la lumière décomposée</span><span class="en">light split apart</span></div>
+    <div class="carte"><div class="tel"><img src="img/resp-neve.webp" alt="" loading="lazy"></div><b class="fr">Névé</b><b class="en">Snowfield</b><span class="fr">neige et soleil d'altitude</span><span class="en">snow and high sun</span></div>
+    <div class="carte"><div class="tel"><img src="img/resp-washi.webp" alt="" loading="lazy"></div><b>Washi</b><span class="fr">papier, encre, koto</span><span class="en">paper, ink, koto</span></div>
+  </div>
+  <div class="nuitjour"><span class="fr">← nuit · jour →</span><span class="en">← night · day →</span></div>
+</section>
+
+<section>
+  <div class="centre">
+    <div class="vient">
+      <div class="etiquette"><span class="fr">Ce qu'on a promis</span><span class="en">What we promise</span></div>
+      <h2><span class="fr">Rien d'enregistré.<br><em>Rien de collecté.</em></span><span class="en">Nothing recorded.<br><em>Nothing collected.</em></span></h2>
+    </div>
+    <div class="principes vient">
+      <div class="principe"><div class="sym">∿</div><h4><span class="fr">Tout le son est synthétisé</span><span class="en">Every sound is synthesized</span></h4><p><span class="fr">Pas de boucles ni d'enregistrements : chaque note, chaque souffle et chaque grain de bruit est calculé au moment où tu l'entends.</span><span class="en">No loops, no recordings: every note, breath and grain of noise is computed the moment you hear it.</span></p></div>
+      <div class="principe"><div class="sym">◌</div><h4><span class="fr">Tes données restent chez toi</span><span class="en">Your data stays with you</span></h4><p><span class="fr">Aucun compte, aucune analytique, aucune pub. Tes réglages restent sur ton iPhone, et l'app n'envoie rien.</span><span class="en">No account, no analytics, no ads. Your settings stay on your iPhone, and the app sends nothing.</span></p></div>
+      <div class="principe"><div class="sym">☾</div><h4><span class="fr">Fait pour le noir</span><span class="en">Made for the dark</span></h4><p><span class="fr">Des gestes qu'on fait sans regarder, et un mode OLED qui éteint presque tout l'écran. Le son continue quand l'iPhone dort.</span><span class="en">Gestures you make without looking, and an OLED mode that dims almost the whole screen. The sound keeps playing while the iPhone sleeps.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="fin">
+  <div class="centre vient">
+    <img class="icone" src="img/icon-512.png" alt="Aphelion">
+    <h2><span class="fr">Bientôt sur ton iPhone.</span><span class="en">Soon on your iPhone.</span></h2>
+    <p class="chapeau" style="margin-inline:auto"><span class="fr">Aphelion est en test. Elle arrive sur l'App Store sous peu.</span><span class="en">Aphelion is in testing. It is coming to the App Store soon.</span></p>
+  </div>
+</section>
+
+<footer>
+  <div class="centre">
+    <span>© 2026 Astrolab</span>
+    <nav><a href="confidentialite.html"><span class="fr">Confidentialité</span><span class="en">Privacy</span></a><a href="support.html">Support</a></nav>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+<script src="trou.js"></script>
+</body>
+</html>
